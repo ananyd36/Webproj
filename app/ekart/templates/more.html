@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+<title>{% block title %}{{ toys.name }}{% endblock %}</title>
+
+{% block body %}
+    <h1 align="center">
+        Toy Name: {{ toys.name }}
+    </h1>
+    <H2 align="center">
+        Toys Price: {{ toys.price }}
+    </H2>
+<!--<form class="toy">-->
+     <input align="center" type="submit" value="Buy">
+<!--</form>-->
+<style>
+    .toy form{
+    text-align:center;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{% block body %}
+    <h3 align="center">
+        Here are all mobiles!!
+    </h3>
+
+
+    <ul>
+        {% for mobile in all_mobile %}
+        <li class = "mob">
+            <div class = grid-container>
+                <div class = "grid-item">
+
+                 <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://www.motorola.com.br/arquivos/familia-moto-g-bateria-moto-g6.png?v=636597617797070000" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{mobile.name}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="{% url 'detail' mobile.id %}" class="btn btn-primary">{{mobile.name}}</a>
+  </div>
+            </div>
+  </div>
+
+</div>
+
+        </li>
+        {% endfor %}
+<style>
+        .mob {
+  float: left;
+  padding:100px;
+}
+</style>
+    </ul>
+{% endblock %}

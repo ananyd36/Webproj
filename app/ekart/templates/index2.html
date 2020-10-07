@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block body %}
+    <h3 align="center">
+        Here are all Toys!!
+    </h3>
+    <ul class="toy">
+        {% for toys in all_toys %}
+        <li >
+            <a href="{% url 'more' toys.id %}">{{ toys.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+<style>
+    .toy ul{
+    text-align:center;
+    }
+</style>
+{% endblock %}

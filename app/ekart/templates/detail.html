@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+<title>{% block title %}{{ mobile.name }}{% endblock %}</title>
+
+{% block body %}
+    <h1>
+        Mobile Name: {{ mobile.name }}
+    </h1>
+    <H2>
+        Mobile Price: {{ mobile.price }}
+    </H2>
+<form>
+     <input type="submit" value="Buy">
+</form>
+{% endblock %}
