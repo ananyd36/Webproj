@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from ekart import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ekart/', include("ekart.urls")),
+    url('register/', views.register, name='register'),
+    url('login/', views.Login_Page, name='Login_Page'),
+    url('logout/', views.logout_user, name='logout_user'),
+
 ]
