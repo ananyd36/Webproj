@@ -13,5 +13,7 @@ class Toys(models.Model):
     price = models.IntegerField()
     #toys_logo = models.FileField()
 
+
     def __str__(self):
         return self.name
+
