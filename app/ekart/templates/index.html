@@ -1,10 +1,10 @@
-{% load staticfiles %}
+{% load static %}
 <html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Ekart{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'ekart/style.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -75,12 +75,13 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
+
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="{% static 'images/1.jpg' %}" alt="Los Angeles" style="width:100%;">
+        <img src="{% static 'images/kitch.jpg' %}" alt="Los Angeles" style="width:100%;">
           <div class="carousel-caption">
-          <h3>Cheapest Phones</h3>
+          <h3>Cheapest Appliances</h3>
           <p>With Best Offers and Deals</p>
         </div>
       </div>
@@ -140,17 +141,26 @@
 			<p style="font-size:15px; color:#03225C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa.</p>
 		</div>
 	</div>
-            <div class="footer">
-  <h2>Footer</h2>
-  <h3>Click here</h3>
+
+        </div>
 </div>
-
-</div>
-
-
-
-
 </body>
+<footer class="container-fluid">
+      <div class="row">
+          <div class="col-md-6">
+              <p class="tnc" style="text-align: center !important;color:gray;">
+                  © 2020 <a style="color: gray;"href="">Terms & Conditions - Privacy Policy</a>
+              </p>
+          </div>
+          <div class="col-md-6 quaffle">
+              <p class="teamline" style="text-align: center !important;color:gray;">
+                  Developed by <a style="color: gray;" href=""><span
+                          style="font-weight: bold;color:gray;">AS</span></a>
+
+              </p>
+          </div>
+      </div>
+  </footer>
 <script>
     $('.multi-item-carousel').carousel({
   interval: false
@@ -170,16 +180,6 @@ $('.multi-item-carousel .item').each(function(){
 });
 </script>
 <style>
-
-.footer{
-  padding-top:500px;
-  background:#ff0;
-  text-align:center;
-  width:100%;
-  display:table-footer-group;
-}
-
-
 .container
 {
     width:800px;
@@ -288,6 +288,5 @@ h1{
 body{
      background:white;
 }
-
 </style>
 </html>
