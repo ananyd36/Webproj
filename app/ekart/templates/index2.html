@@ -10,11 +10,11 @@
     	<div class="product-card">
 		<div class="badge">Best-Seller</div>
 		<div class="product-tumb">
-			<img src="https://www.motorola.com.br/arquivos/familia-moto-g-bateria-moto-g6.png?v=636597617797070000" alt="">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/714Mtyb3aAL._SY450_.jpg" alt="">
 		</div>
 		<div class="product-details">
 			<span class="product-catagory">Toys</span>
-			<h4><a href="">{{toys.name}}</a></h4>
+			<h4><a href="{% url 'more' toys.id %}">{{toys.name}}</a></h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
 			<div class="product-bottom-details">
 				<div class="product-price"><small>Rs.{{toys.price}}</small>Rs.{{toys.price}}</div>
@@ -182,4 +182,5 @@ a
   }
 }
 </style>
-    {% endblock %}
+
+{% endblock %}

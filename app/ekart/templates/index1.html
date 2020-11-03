@@ -14,7 +14,7 @@
 		</div>
 		<div class="product-details">
 			<span class="product-catagory">Mobile</span>
-			<h4><a href="">{{mobile.name}}</a></h4>
+			<h4><a href="{% url 'detail' mobile.id %}">{{mobile.name}}</a></h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
 			<div class="product-bottom-details">
 				<div class="product-price"><small>Rs.{{mobile.price}}</small>Rs.{{mobile.price}}</div>
